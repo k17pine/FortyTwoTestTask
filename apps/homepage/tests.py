@@ -10,6 +10,6 @@ class SomeTests(TestCase):
 class HomePageTests(SimpleTestCase):
 
     def test_home_page_status_code(self):
-    	"put docstrings in your tests"
+        "put docstrings in your tests"
         response = self.client.get('/')
         self.assertEquals(response.status_code, 200)
