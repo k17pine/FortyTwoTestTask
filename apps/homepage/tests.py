@@ -1,14 +1,11 @@
 from django.test import TestCase, SimpleTestCase
-from django.http import HttpRequest
-
-from . import views
-# Create your tests here.
 
 
 class SomeTests(TestCase):
     def test_math(self):
         "put docstrings in your tests"
         assert(2 + 2 == 4)
+
 
 class HomePageTests(SimpleTestCase):
 
