@@ -1,13 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<div class="container">
-		<h3>42 Coffee Cups Test Assignment</h3>
-	</div>    
-</head>
+{% extends 'base.html' %}
 
-<body>
+{% block title %}Homepage{% endblock title %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+	<h3>42 Coffee Cups Test Assignment</h3>
+</div>    
+{% endblock extra_head %}
+
+{% block content %}
 <div class="container">
 	<div class="row">
 	  <div class="col-sm-4">
@@ -38,5 +40,4 @@
 	  </div>
 	</div>
 </div>
-</body>
-</html>
+{% endblock content %}
