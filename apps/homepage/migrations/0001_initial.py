@@ -13,9 +13,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Human',
             fields=[
-                ('id', models.AutoField(
-                    verbose_name='ID', primary_key=True,
-                    serialize=False, auto_created=True)),
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, serialize=False, auto_created=True)),
                 ('Name', models.CharField(max_length=50)),
                 ('sName', models.CharField(max_length=50)),
                 ('Email', models.CharField(max_length=50)),

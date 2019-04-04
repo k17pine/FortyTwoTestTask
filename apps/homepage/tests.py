@@ -29,5 +29,5 @@ class HomePageTests(SimpleTestCase):
 class HumanModelTest(TestCase):
 
     def test_string_representation(self):
-        human = Human(Name="Bogeyman ")
-        self.assertEqual(str(human), human.Name)
+        human = Human(name="Bogeyman ")
+        self.assertEqual(str(human), human.name)
