@@ -1,4 +1,5 @@
 from django.test import TestCase, SimpleTestCase
+from .models import Human
 
 
 class SomeTests(TestCase):
@@ -23,3 +24,10 @@ class HomePageTests(SimpleTestCase):
         "Page didn't contains bad text"
         response = self.client.get('/')
         self.assertNotContains(response, 'Hi! I should not be on the page.')
+
+
+class HumanModelTest(TestCase):
+
+    def test_string_representation(self):
+        human = Human(Name="Bogeyman ")
+        self.assertEqual(str(human), human.Name)
